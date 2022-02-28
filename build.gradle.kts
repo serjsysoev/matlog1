@@ -17,7 +17,7 @@ dependencies {
 }
 
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "15"
+    kotlinOptions.jvmTarget = "11"
 }
 
 tasks.named<JavaExec>("run") {
