@@ -20,6 +20,10 @@ tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "15"
 }
 
+tasks.named<JavaExec>("run") {
+    standardInput = System.`in`
+}
+
 tasks.test {
     useJUnitPlatform()
 }
